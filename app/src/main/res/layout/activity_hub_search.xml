@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search Hub:"
+            android:textAppearance="?android:textAppearanceMedium"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:id="@+id/edit_text_search_hub"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Enter Hub Number"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:textAlignment="center"
+            android:inputType="number"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="search"
+            android:id="@+id/search_button"/>
+        </LinearLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_view_hub_search"/>
+
+
+</LinearLayout>
